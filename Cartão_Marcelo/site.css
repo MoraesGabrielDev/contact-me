@@ -1,0 +1,607 @@
+body {
+  margin: 0;
+  padding: 0;
+ font-family: 'Montserrat', Arial, sans-serif;
+  background: url('imgs/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project (3).png') no-repeat center center/cover;
+  text-align: center;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+.background-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0A193C;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+  margin-top: -0.1px;
+  color: #fff;
+}
+
+
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0;
+  padding-bottom: 40px;
+        margin: 0 auto 50px;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ffe066;
+        width: 400px;
+        text-align: center;
+  color: #fff;
+}
+
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 100px;
+}
+
+.profile-pic {
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid #10186B;
+  width: 248px;
+  height: 333px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#titulo {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+}
+.bio-text{
+  padding: 20px;
+  color: #fff;
+}
+
+.bio-box {
+  background-color: rgba(16, 24, 107, 0.9);
+  padding: 15px;
+  border-radius: 40px;
+  max-width: 570px;
+  height: 300px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+
+  margin-top: 15px;
+}
+
+.buttons button {
+  background: url('imgs/agend_consulta.png');
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold italic;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}
+
+
+.trajetoria {
+  margin: 40px 0;
+  display: flex;
+}
+
+.container-trajetoria {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(16, 24, 107, 0.9);
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 70px;
+}
+
+.trajetoria h3{
+color: #fff;
+font-size: 1.5rem;
+}
+
+.text-trajetoria{
+color: #fff;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.strong-text {
+ color: #ffe066;
+}
+
+.artigos-title {
+  font-size: 2rem;
+  font-weight: bold;
+ margin-bottom: -70PX;
+ margin-top: 100px;
+  color: #fff;
+}
+.link-artigos {
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link-artigos:hover,
+.link-artigos:focus {
+  color: #ffe066; /* cor dourada ou amarelo suave */
+  transform: scale(1.05);
+  outline: none; /* remove o contorno azul no focus */
+}
+
+.swiper {
+  width: 900px;
+  height: 300px;
+  margin-bottom: 70px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  height: 100% !important;
+}
+.slide-rect {
+  background: rgba(16, 24, 107, 0.9);
+  border-radius: 16px; /* ou 999px se quiser bem arredondado */
+  width: 700px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  background: #ffe066;
+  color: #10186B;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 8px rgba(92,97,66,0.18);
+  transition: background 0.2s, color 0.2s, transform 0.3s;
+
+
+}
+
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
+  color: #10186B;
+  font-size: 1.5rem;
+  transition: transform 0.3s, filter 0.3s, color 0.3s;
+}
+
+div.swiper-button-prev:hover,
+div.swiper-button-next:hover {
+  background: #10186B;
+  color: #ffe066;
+  transform: scale(1.12);
+}
+
+div.swiper-button-prev:hover::after,
+div.swiper-button-next:hover::after {
+  color: #ffe066;
+  filter: drop-shadow(0 0 8px #ffe066);
+  transform: scale(1.12);
+}
+
+.div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  color: #fff;
+}
+
+.home-button {
+  text-decoration: none;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #ffe066;
+  text-shadow: 1px 1px 2px black;
+  display: inline-block;
+}
+
+/* Link interno */
+.home-button a {
+  position: relative;
+  color: #ffe066;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    transform 0.3s ease;
+ 
+  display: inline-block;
+}
+
+/* Linha dourada animada aparecendo em cima */
+.home-button a::before {
+  content: '';
+  position: absolute;
+
+  width: 0%;
+  height: 2px;
+  background-color: #ffe066;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Hover estilizado */
+.home-button a:hover {
+  color: #fff4b8;
+
+  transform: scale(1.08); /* leve crescimento */
+}
+
+.home-button a:hover::before {
+  width: 100%; /* linha se expande da esquerda para a direita */
+}
+
+@media (max-width: 1024px) {
+  .container,
+  .container-trajetoria {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 270px;
+  }
+
+  .bio-box {
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .buttons button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .trajetoria {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .trajetoria h3 {
+    font-size: 1.3rem;
+  }
+
+  .text-trajetoria {
+    text-align: center;
+  }
+
+  .artigos-title {
+    font-size: 1.6rem;
+    margin-top: 60px;
+    margin-bottom: -40px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 250px;
+  }
+
+  .slide-rect {
+    width: 100%;
+    max-width: 600px;
+    height: 85px;
+    font-size: 14px;
+  }
+
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 0.9em;
+    padding-bottom: 20px;
+  }
+
+ 
+
+  .profile-pic {
+    width: 150px;
+    height: 200px;
+  }
+
+  .bio-box {
+    height: auto;
+    font-size: 13px;
+    padding: 15px;
+  }
+
+  .buttons {
+    display: flex;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .buttons button {
+    width: 200px;
+    padding: 14px 0;
+    font-size: 15px;
+  }
+
+  .trajetoria h3 {
+    font-size: 1.1rem;
+  }
+
+  .artigos-title {
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: -20px;
+  }
+
+  .swiper {
+    height: 200px;
+  }
+
+  .slide-rect {
+    width: 100%;
+    max-width: 100%;
+    height: 75px;
+    font-size: 13px;
+  }
+
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0;
+  padding-bottom: 40px;
+        margin: 0 auto 50px;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ffe066;
+        width: 300px;
+        text-align: center;
+  color: #fff;
+}
+
+
+.buttons{
+  width: 80%;
+  max-width: 320px;
+  background-size: contain; /* para o background da imagem não esticar */
+  padding: 12px 0;
+  font-size: 14px;
+  border-radius: 25px;
+  margin: 0 auto;
+  display: block;
+}
+
+.button1{
+margin-bottom: 25px;
+}
+
+.artigos-title{
+ font-size: 1.4em;
+}
+
+.swiper {
+  width: 380px;
+
+}
+
+.slide-rect {
+ width: 270px;
+  height: 75px;
+  font-size: 14px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: rgba(16, 24, 107, 0.9);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+div.swiper-button-prev,
+div.swiper-button-next {
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+div.swiper-button-prev {
+  left: 5px;
+}
+
+div.swiper-button-next {
+  right: 5px;
+}
+
+/* Ajustes para textos centralizados que precisam ficar responsivos */
+#titulo {
+  font-size: 1.4em;
+}
+
+@media (max-width: 414px) {
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0;
+  padding-bottom: 40px;
+        margin: 0 auto 50px;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ffe066;
+        width: 250px;
+        text-align: center;
+  color: #fff;
+}
+
+}
+
+@media (max-width: 390px) {
+  .swiper{
+transform: translateX(-14px);
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0;
+  padding-bottom: 40px;
+        margin: 0 auto 50px;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ffe066;
+        width: 200px;
+        text-align: center;
+  color: #fff;
+}
+  }
+@media (max-width: 375px) {
+
+  #titulo{
+    font-size: 1.4em;
+  }
+ .buttons{
+  width: 80%;
+  max-width: 320px;
+  background-size: contain; /* para o background da imagem não esticar */
+  padding: 12px 0;
+  font-size: 14px;
+  border-radius: 25px;
+  margin: 0 auto;
+  display: block;
+}
+
+.profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+     
+      gap: 100px;
+}
+
+
+
+.button1{
+margin-bottom: 25px;
+}
+
+.artigos-title{
+ font-size: 1.4em;
+}
+
+.swiper{
+width: 350px;
+}
+
+.swiper a{
+ font-size: 0.9em;
+}
+.slide-rect{
+width: 250px;
+}
+
+.home-button{
+font-size: 0.9em;
+}
+}
+
+/* Ajuste para o texto do h1 em telas muito pequenas */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+}

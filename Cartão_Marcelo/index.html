@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marcelo Cabral - Psicanalista</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile-logo">
+          <img src="imgs/foto_capa_att.png" alt="Foto" class="profile-img" />
+          <div class="logo-section">
+            <img
+              src="imgs/Design sem nome (23).png"
+              alt="Logo"
+              class="logo-img"
+            />
+          </div>
+        </div>
+      </header>
+      <section class="buttons-section">
+        <a href="site.html" target="_blank" class="btn">
+          <i class="fa-solid fa-globe"></i>
+          <span>Site</span>
+        </a>
+        <a href="https://wa.me/5511984642800?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20consultas" target="_blank" class="btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="leitura.html" target="_blank" class="btn">
+          <i class="fa-solid fa-book"></i>
+          <span>Leituras</span>
+        </a>
+      </section>
+
+      <section class="apresentation">
+        <div>
+          <h2>O Trabalho de Amadurecimento Pessoal: O Processo de Análise</h2>
+        </div>
+        <div class="text-apresentation">
+          <p>
+            A partir da escuta atenta, do acolhimento, da empatia, receber um ser humano disposto a ressignificar e dar novo sentido a sua própria angústia, é o começo do trabalho desenvolvido na clínica junto aos meus pacientes. Saber escutar a dor do outro e acolher a angústia de outrem torna-se aqui o começo do itinerário cujo objetivo é o amadurecimento pessoal.
+
+Com a escuta clínica ancorada pelo acolhimento e gesto empático, onde o analista consegue interpretar o paciente no idioma pessoal nativo a partir da construção cultural e vivência possibilitada ao longo dos anos, o trabalho começa na organização afetiva das angústias que o paciente demandar. “Sou visto, logo existo” (Winnicott).
+
+Assim, o amadurecimento pessoal vai se concretizando e as falhas ambientais resultantes de vários anos de formação podem ser ressignificadas e o paciente construir possibilidades e vivências a partir da experiência da análise pessoal.
+<br>
+            Dr. Marcelo Cabral de Araújo
+          </p>
+        </div>
+      </section>
+
+      <section class="articles-section">
+        <div class="articles-header">
+          <img
+            src="imgs/cerebro-criativo (1) 2.png"
+            alt="Logo Artigos"
+            class="icon-artigos"
+          />
+          <span class="artigos-title">Artigos</span>
+        </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-rect">
+                <a href="artigos.html" target="_blank">
+                   A Banalidade da Vida e a Falta de Empatia: A Desumanização Como
+                   Mal-Estar Contemporâneo
+                </a>
+               
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-rect">
+                <a href="artigos.html" target="_blank">
+                  O Afeto Digital
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-rect">
+                <a href="artigos.html" target="_blank">
+                 Onde os Afetos se Encontram
+                </a>
+              </div>
+            </div>
+              <div class="swiper-slide">
+              <div class="slide-rect">
+                <a href="artigos.html" target="_blank">
+                 Autismo Digital
+                </a>
+              </div>
+            </div>
+
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+      <section class="info-section">
+        <img src="imgs/Design sem nome (26).png" class="img_rodape" />
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script para inicializar o Swiper -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+    <script src="carrosel.js"></script>
+
+   <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elementos = document.querySelectorAll(".form-control, .form-label, .btn-primary");
+
+    const observer = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elementos.forEach((el) => {
+      el.classList.add("fade-in");
+      observer.observe(el);
+    });
+  });
+</script>
+  </body>
+</html>

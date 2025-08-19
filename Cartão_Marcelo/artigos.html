@@ -1,0 +1,419 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugestões de Artigos</title>
+<!-- Fonte Montserrat do Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Montserrat', Arial, sans-serif;
+        background: url('imgs/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project (3).png') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    .background-filter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 25, 60, 0.8);
+        z-index: -1;
+    }
+
+    h1 {
+        margin: 0 auto 50px;
+        font-size: 3em;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ffe066;
+        width: max-content;
+        text-align: center;
+    }
+
+    .article-list {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .article {
+        background: rgba(20, 35, 90, 0.85);
+        padding: 25px 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .article:hover {
+        background: rgba(0, 0, 0, 0.8);
+        transform: translateY(-3px);
+    }
+
+    .article h2 {
+        margin-top: 0;
+        font-size: 1.8em;
+        font-weight: 700;
+        color: #ffe066;
+    }
+
+    .content {
+        display: none;
+        margin-top: 15px;
+        font-size: 1em;
+        line-height: 1.8;
+        color: #f0f0f0;
+    }
+
+    .content p {
+        margin-bottom: 15px;
+    }
+
+    /* Botão música */
+    #music-btn {
+        background: #ffe066;
+        color: #000;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 1em;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    #music-btn:hover {
+        background: #ffda33;
+        transform: scale(1.05);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.2em;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+        }
+
+        .article {
+            padding: 20px 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.8em;
+        }
+
+        .article h2 {
+            font-size: 1.3em;
+        }
+
+        .article {
+            padding: 15px 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="background-filter"></div>
+
+<h1>Sugestões de Artigos</h1>
+
+<!-- Botão de música -->
+<button id="music-btn" onclick="toggleMusic()">🔊 Tocar Música</button>
+
+<!-- Áudio de fundo -->
+<audio id="bg-music" loop>
+    <source src="audio/schubert-liszt ständchen from schwanengesang (setrak).mp3" type="audio/mpeg">
+</audio>
+
+<div class="article-list">
+    <div class="article" onclick="toggleContent(this)">
+        <h2>A Banalidade da Vida e a Falta de Empatia: A Desumanização Como Mal-Estar Contemporâneo</h2>
+        <div class="content">
+            <p>Breve contextualização:<br>
+Em tempos atuais, a falta de empatia assola a vida em sociedade. Tal fato é decorrente da
+banalidade da vida, pois o ser humano cada vez mais se desumaniza sendo levado a atitudes
+irracionais, colocando assim a sociedade em que vive no estado de barbárie, propiciando uma
+verdadeira guerra de todos contra todos. Sem sombra de dúvida, a vida em tempos atuais, o
+laço de fraternidade que nos une como ser humano está fragilizado devido a fragmentos sociais
+contemporâneos estarem em ruptura.
+O entendimento de forma fragmentada da presente sociedade através de uma categoria
+filosófica chamada empatia através do uso desse termo permitirá balizar as relações sociais contemporânea.
+A idéia a ser explorada e o conceito chave para a explicação do problema aqui
+levantado está depositado na teoria da filósofa alemã Edith Stein sobre o conceito de empatia.
+Este, fora sua tese de doutorado que em 2017 completou cem anos.
+Para melhor exemplificar os conceitos citados no título, serão definidos de forma substancial
+os temas banalidade, empatia e mal-estar para que assim possa clarificar o entendimento. O
+conceito de banalidade será resgatado da filósofa alemã Hannah Arendt e a idéia de mal-estar
+será cunhada dentro dos escritos do psicanalista alemão Sigmund Freud.Interessante é percebemos
+e não por acaso que os três teóricos utilizados nesse presente artigo são alemães e judeus.
+Stein, Freud e Arendt vivenciaram a segunda guerra mundial sendo que Stein, tornando-se
+mártir, sendo morta em campos de extermínio no interior da Alemanha pelo fato de ser judia.
+Ressalta-se a importância em destacar a banalidade da vida não provendo de tempos atuais, mas
+sim como algo sempre presente na história da humanidade, que de ciclos em ciclos a humani-
+* Professor de Sociologia e Psicanalista. Mestrando em Ciência da Religião.
+ISSN 1809-2888
+Licenciado sob uma Licença Creative Commons
+Ciberteologia - Revista de Teologia & Cultura - Ano XV, n. 60 182
+CIBER TEOLOGIA
+CIBER TEOLOGIA
+dade vivencia uma onde de barbárie. As vidas ceifadas nas guerras do século XX marcam decisivamente
+a contemporaneidade trazendo consequências na vida social, cultural e psicológica
+de toda a humanidade.
+Alguns procedimentos para análise
+A pesquisa de livros nas ciências humanas em áreas como filosofia e psicanálise, permitira
+a conceituação de temas que são centrais no presente artigo. Os conceitos-chave do artigo:
+banalidade, empatia e mal-estar serão facilitadores, pois a reflexão sobre cada um desses temas
+permitirá a análise de pontos da sociedade investigados aqui.
+A definição conceitual dos temas enunciados no título irá permitir uma reflexão através da
+análise histórica e contemporânea do tema caro a esse artigo. A banalidade deve ser entendida
+aqui como um registro histórico e contemporâneo de uma dada sociedade. O termo empatia,
+sendo uma categoria filosófica e psicológica, poderá ser entendido como medidor de uma sociedade
+que pratica a banalidade.
+Em maio de 2019, um músico é fuzilado no Rio de Janeiro por tropas militares com oitenta
+e oito tiros com o fim de exemplificar a falta da vivência do outro, ou seja, a falta de empatia e
+a recorrente banalidade da vida. A descrição desse fato contemporâneo junto com a interpretação
+através de conceitos filosóficos e psicológicos propiciara uma análise criteriosa. Contudo, o
+exemplo citado acima será de notório entendimento a fim de exemplificar a banalidade recorrente
+na sociedade brasileira.
+Assim, será feita a pesquisa bibliográfica, além de uma contextualização histórica e conceitual
+dos termos conceituais empregados no presente trabalho. A atualização de conceitos
+trabalhados no presente trabalho através de relatos da vida cotidiana mencionada em jornal de
+vinculação permitirá a interpretação através do conceito chave balizador empatia que tornará
+possível a mensuração da banalidade na sociedade vigente.
+A banalidade da vida e o extermínio de seres humanos
+“Não posso deixar de pensar
+que este foi o século mais violento
+da história humana”.
+William Golding
+ISSN 1809-2888
+Licenciado sob uma Licença Creative Commons
+Ciberteologia - Revista de Teologia & Cultura - Ano XV, n. 60 183
+CIBER TEOLOGIA
+CIBER TEOLOGIA
+“Agora me ficava bem claro que mais uma vez
+Deus pesava sua mão sobre seu povo
+e que o destino desse povo era também o meu”.
+Edith Stein
+Na obra Era dos Extremos, o autor Eric Hobsbawn aponta que o século onde a humanidade
+viveu duas guerras mundiais, e na segunda metade do século XX, guerras como Vietnã, Iraque,
+entre outras, mostram que o século XX fora o século mais violento da história como aponta
+William Golding. Sem sombra de dúvidas, o extermínio de povos em especial, judeus, ciganos,
+negros, soviéticos entre outros, marca decisivamente o século XX.
+Com o apogeu do nazismo e como aponta Hannah Arendt, a vida se torna banal e o Nazismo
+é o sistema político e ideológico que faz surgir à banalidade do mal. Este mal é conflagrado
+com o extermínio de seis milhões de judeus, outros tantos de ciganos, negros e homossexuais,
+através do instrumento de câmera de gás, experimento científicos (eugenia), tornando a vida
+humana em si uma verdadeira banalidade. O Conceito de Banalidade do Mal surge no totalitarismo
+nazista conforme aponta Hannah Arendt. Um caso clássico desse aparato ideológico
+político e social, o nazismo, é o caso que Arednt descreve sobre Eichmann. Este apenas cumpria
+e obedecia a ordens, considerando-se uma vítima, pois seguiu de forma trivial as ordens das
+quais lhe era incumbido.
+Diante dessa banalidade explicita por Eichmann e pensando nos dias atuais, quando um comando
+militar em área urbana, fuzila com oitenta e oito tiros uma vida humana, existe alguma
+diferença entre Eichmann e um soldado militar brasileiro ou será que a vida simplesmente um
+fator banal... interrogação.Os agentes do Estado, como no caso de Eichmann ou dos soldados
+brasileiros, são o resultado de uma autorização do mal atribuída e própria do Estado que autoriza
+e legitima a violência contra a vida humana.
+A execução de seres humanos é um ato de barbárie. Cada vez mais, com a racionalidade e a
+garantia dos direitos modernos e na segunda metade do século XX, os direitos humanos, tornar
+o outro ser humano como coisa, tratar de uma vida diferente de outrem pela questão de pele,
+gênero ou classe social, é uma atitude desumanizadora que o espírito maior que autoriza a ceifa
+do ser humano, no limite, podemos entender como o próprio Estado.Através de políticas perniciosas
+a população como a questão bélica, a autorização da posse de armas ou de discursivo
+advindo do Poder Executivo que muitas vezes autoriza a violência, como no caso brasileiro e
+estadunidense, a fala de um estadista autoriza para os menos avisados a banalidade da vida.
+ISSN 1809-2888
+Licenciado sob uma Licença Creative Commons
+Ciberteologia - Revista de Teologia & Cultura - Ano XV, n. 60 184
+CIBER TEOLOGIA
+CIBER TEOLOGIA
+O mundo presente, erguido sobre o sangue de milhões de pessoas, sendo a maior parte dos
+países sendo explorado por um pequeno grupo de países que controla e “polícia” o mundo,
+como agentes do mal, possa na verdade, encarnar, autorizar e legitimar a violência de forma
+banal contra o outro, contra o próprio semelhante?
+A empatia pelo outro como superação da banalidade
+A filósofa judia alemã Edith Stein, vivenciando a segunda guerra mundial, escreve um livro,
+do qual seria o seu último sobre a vida e obra de s.João da Cruz, intitulado Ciência da Cruz.
+Nessa obra, Stein marca decisivamente e delineia como uma vida e obra de um ser humano
+podem ser vivenciada e compartilhada de forma empática, através da riquíssima vida de um
+santo católico. Assim, tomar a obra Ciência da Cruz como testemunho de uma vida empática, é
+sem dúvida alguma, uma notoriedade exemplar dentro de um período turbulento e perseguidor
+onde a própria Stein, fora perseguida e executada pelo nazismo.
+É necessária sim, uma definição do conceito referencial do presente artigo que é empatia.
+Em sua tese de doutorado Sobre o Problema da Empatia, Edith não define de forma objetiva
+o conceito de empatia, mas sim, permitindo entender por alguns retalhos a construção de um
+tecido própria do qual nomeia-se empatia: ... “não se trata de uma intuição ou de uma emoção,
+mas de um saber do que se passa na consciência alheia, uma experiência da experiência alheia,
+um perceber aquilo que o outro vivencia ou, ainda, um sentir o que sente o outro” (SAVIAN,
+p. 34). Ao falar de sentimento empatizado, Edith não situa a empatia na ordem afetiva; ela se
+refere à certeza que é sentida pelo sujeito quando capta o sentido de algo; trata-se de uma experiência
+indecomponível que acompanha o trazer algo à consciência”. A empatia, segundo Stein,
+é cooriginária por seu sentido, não por seu ato. “A consciência do outro, o mundo e o eu são as
+três frentes de investigação fundamentais em fenomenologia; assim, a empatia é o nome que designa
+especificamente o ato pelo qual o que pode conhecer a experiência alheia, donde o caráter
+insista epistemológico da temática, e não psicológico ou psíquico. A empatia é o que permite
+afirmar a intersubjetividade e garantir uma visão não solipsista do mundo nem do próprio eu
+que conhece” (SAVIAN, p. 51).
+A partir das definições apresentadas acima, o conceito de empatia steniano pode ser mensurado
+através de três níveis: corpo, alma e espírito. A empatia pode ser sentida pelos poros, no
+campo do corpo, dentro de um critério sensitivo.A categoria mais complexa da empatia, sem
+dúvida alguma, e também a mais difícil de ser entendida é pelo espírito.Pelo espírito nos igualamos,
+podemos ser idênticos, pois é a alma é o espírito que iguala todos os seres humanos, inISSN
+1809-2888
+Licenciado sob uma Licença Creative Commons
+Ciberteologia - Revista de Teologia & Cultura - Ano XV, n. 60 185
+CIBER TEOLOGIA
+CIBER TEOLOGIA
+dependentemente da crença, etnia ou classe social.Nossa matéria, corpo, é animada e por meio
+dessa “centelha”, podemos vivencia e experiênciar a vida dentro das mais diversas possibilidades.
+O mal como mal-estar contemporâneo
+O psicanalista judeu alemão, Sigmund Freud, publicou em 1930 a obra O Mal-Estar na
+Cultura. Nessa obra, Freud aponta que é na cultura, entendida como Estado, família e religião,
+que podemos encontrar a miséria humana. A tragédia da condição humana é discorrida por
+Freud em um período marcado por guerras e crise econômica.
+A partir dos escritos freudianos sobre a miséria humana, e que o ápice dessa miséria pode
+ser entendido como o totalitarismo alemão, elucidado por Arendt, ecoa nos dias de hoje ventos
+sombrios onde esse mal encarnado na sociedade alemã, ressoa abaixo da linha do Equador.
+Quando, no caso brasileiro, um governo autoriza a violência em discursos governamentais,
+ou mesmo membro dos executivos faz apologia ao uso da força e armas, o mal encarna em si
+não apenas uma pessoa, mas tudo aquilo que é representado por essa pessoa ou chefe de algum
+poder executivo, nas esferas municipal, estadual ou federal.
+Ora, o filósofo contratualista inglês Thomas Hobbes, afirmou: ... “O homem é o lobo do
+homem”. Se vivêssemos em um estado de selvageria, a hipótese hobbesiana com toda certeza
+estaria certo.Pois bem, mas esse não é o caso.Vivemos sobe a égide de direitos, mais que isso, de
+direitos humanos.Somos norteados por uma constituição, por regras e leis e condutas sociais.
+Devemos mesmos ser servos de governantes que disseminam o ódio pelo discurso totalitário ou
+devemos reinventar uma a lógica de ser brasileiros e com o verdadeiro “jeitinho” recriar a forma
+de viver e ser governados... A empatia pode ser uma possibilidade.
+Conclusão
+Assim como o Estado totalitário, a propagação de violência e armamento da sociedade
+emerge, antes de tudo, da cultura, também, a desumanização, a banalidade da vida e falta
+de empatia pelos outros como consequências da vida contemporânea, também fruto de uma
+cultura da nossa própria época, tais práticas e condutas podem sim também ser repensadas e
+evitadas dentro do plano da própria cultura, através do auxilio da educação e conscientização
+de toda sociedade.
+Se podemos nos igualar pela empatia, podemos sim superar o discurso de ódio e banalidade
+da vida da qual a sociedade oferece. Esse trabalho pode ser feito através da conscientização do
+ISSN 1809-2888
+Licenciado sob uma Licença Creative Commons
+Ciberteologia - Revista de Teologia & Cultura - Ano XV, n. 60 186
+CIBER TEOLOGIA
+CIBER TEOLOGIA
+outro por meio de educação, oportunidades e campanhas públicas promovidas pelo Estado na
+tentativa de humanizar o outro, pois empatia pode ser entendida na perspectiva de que o outro
+é meu igual, mas possui identidade própria, diferente da minha. Os seres humanos são únicos
+e singulares, portadores de uma experiência pessoal genuína.
+É dever de todo ser humano se enriquecer daquilo que a humanidade tem de mais belo: a
+cultura. Através da cultura o ser humano pode vivenciar, compartilhar e experiência diversas
+sensações e emoções. Pode também cultuar e venerar aquilo que lhe ocorrer.Pois bem, quiça que
+todos os seres humanos possam venerar e idolatrar aquilo que lhe é próprio, a cultura, e assim,
+que todos os seres humanos sejam respeitados, tratados e reconhecidos de forma singular, sendo
+assim, possuidores de uma mesma fonte identitária.</p>
+        </div>
+    </div>
+
+    <div class="article" onclick="toggleContent(this)">
+        <h2>O Afeto Digital</h2>
+        <div class="content">
+            <p>O cérebro eletrônico faz tudo<br>
+Faz quase tudo<br>
+Faz quase tudo<br>
+Mas ele é tudo<br>
+O cérebro eletrônico comanda<br>
+Manda e desmanda<br>
+Ele é quem manda<br>
+Mas ele não anda<br>
+(Gilberto Gil)<br>
+
+A belíssima letra explicadora de Gilberto Gil sobre a modernidade escrita em 1969 já anunciara como seria construída as relações sociais nos anos 2000. Um século anterior a letra de Gil, Mary Sherley escreveu a obra Franskstein, que viera a anunciar o desencantamento do mundo já anunciado por Nietzche e a racionalização massiva da sociedade pelo conhecimento científico e em grande parte pelo uso de tecnologias.
+
+Talvez essa seja a maior barreira do mundo digital: a afetividade. Mesmo que seres humanos possam se conhecer pelo mundo virtual, construir ou desconstruir suas relações pessoais pelo uso de interfaces digitais, a afetividade não consegue se construir pela timeline, mas sim pela interação dos corpos, seja pelo olhar, pelos corpos ou pelos encontros de almas. O mesmo raio que deu vida a Frankstein, faz-se necessário para uma relação humana acontecer.
+
+Não é à toa que competências integradoras dos seres humanos como empatia seja tão cobrada pelo mundo corporativo. Grande parte das pessoas não sabem viver socialmente. Quando se vai ao mercado, muitas vezes o prestador não tem a mínima educação, trabalhadores jovens não conseguem se efetivar muito tempo no trabalho, enfim, as relações humanas são líquidas como já afirmou Baumann, esfarecendo-se como um clique, próximo...
+
+Talvez o segredo de conciliar essa serpente (tecnologia) seja não a deixar dominá-la pelos seus atrativos e encantos. Podemos ser como um encantador de serpentes e conduzi-la de um lado para o outro sem ser picado, pois se assim o for, o veneno é mortal. Muitas pessoas estão sendo picadas pela serpente da tecnologia e o antídoto para esse mal está dentro de todos nós, não no modo digital, mas no aspecto espiritual conectando-se com o mais difícil para muitos, deixar um pouco o modo digital e conectar-se com o eu interior.</p>
+        </div>
+    </div>
+
+    <div class="article" onclick="toggleContent(this)">
+        <h2>Onde os Afetos se Encontram</h2>
+        <div class="content">
+            <p>Nos dias de hoje, a afetividade tem ponto e lugar de encontro comum: mundo virtual. Aos poucos as pessoas vão perdendo aquilo que é naturalmente humano como a reação por gestos espontânea, a troca de olhares, o abraço caloroso, beijos, enfim, as pessoas estão trocando suas estações afetivas por um lugar vazio, congelado e individualista: o mundo digital.
+
+Diversos estudos já apontam para o excesso de individualismo crescente na cultura humana onde toda a expressividade humana fica reduzida apenas à emissão de emoticons ou “likes” que expressam um sentimento “congelado” dado através da operação tecnologia e gestual humano: click.
+
+O processo de individualismo na cultura humana já se apresenta há tempos, mas que no tempo atual ganha uma grande densidade por meio da tecnologia. Desde processos econômicos como o liberalismo, passando por John Locke, Adam Smith até chegar nos dias de hoje com os neoliberais como Friederich von Hayek e Ludwig von Mises, o crescente individualismo impulsionado por um mundo cada vez mais globalizado e integrado, permite ao ser humano estar conectado com todos, mas, de antemão, em muitos casos, não está conectado consigo mesmo.
+
+Uma grande propagação e aumento como sintomas de depressão podem ser interpretados de diferentes formas. Um caminho possível é com o aumento do uso da tecnologia, o exacerbado individualismo, pode estar despertando quadros psicológicos de melancolia ou de desespero, de uma ansiedade generalizada com inúmeras possibilidades do que fazer, mas de fato, sem a resolução de nada, ficando tudo mal resolvido e descontrolado.
+
+A sociedade nos dias de hoje, resultante de um modelo econômico extremamente desigual, o uso da tecnologia para o bem, mas mais para o “mal”, faz com que os indivíduos não socializem, troquem afetos, gestos, ficando assim limitados a um teclado e diversas “telas”.
+
+Saudosismo à parte, mas como era bom esperar horas na fila de um parque de diversão para se aventurar em um brinquedo, ter uma sexta de happy hour com os amigos ou mesmo fazer um pique nique com a família aos domingos. A sociedade humana está doente e os afetos precisam se encontrar. “Quero assistir ao sol nascer, ver as águas dos rios correr, ouvir os pássaros cantar, eu quero nascer, quero viver.” (Cariota).</p>
+        </div>
+    </div>
+
+     <div class="article" onclick="toggleContent(this)">
+        <h2>Autismo Digital</h2>
+        <div class="content">
+            <p>AUTISMO DIGITAL
+Marcelo Cabral<br>
+
+Na sociedade contemporânea, globalizada e interligada pelas redes sociais, acontece um fenômeno curioso que ressalta o olhar de todo observador. Desde o mercantilismo, quando as civilizações começaram a ter um contato pessoal e comercial, o contato entre os povos foi decisivo nas mais diversas formas de interesse, desde a exploração econômica até mesmo em relações afetivas. Com o individualismo oriundo da sociedade burguesa, impulsionado por uma economia consumista, o básico entre os seres humanos começou a se perder.<br>
+
+Diversas tradições culturais desde os antigos povos indígenas das Américas, bem como civilizações dos vários continentes, todos esses grupos sociais têm um elo em comum: a vida em sociedade, em grupos. Ora, sabe-se que o ser humano é um ser social, não vive sozinho. Para viver em sociedade, ele precisa viver em grupos, pois a partir daí constrói sua identidade.<br>
+
+Percebemos, nos dias de hoje, que o mundo high-tech vem trazendo uma espécie de isolamento social entre grande parte das pessoas que comungam da esfera do virtual, e os mais atingidos são os jovens, que ficam à deriva de sua afetividade, transpondo-a para o universo do cibernético. A esse fenômeno social é que vamos classificar aqui como mera forma de representação, ou seja, autismo digital.<br>
+
+O autismo é uma patologia da ordem do mental que tem uma característica bem próxima com o fenômeno que está sendo estudado: o recolhimento. O termo autismo foi criado em 1907 por Eugen Bleuler e derivado do grego auto (o si mesmo), para designar o ensimesmamento psicótico do sujeito em seu mundo interno e a ausência de qualquer contato com o exterior. Diante dessa definição do espectro autista, parece mais fácil entender o fenômeno social aqui apresentado. Partindo da ordem do psiquismo para o social, fatalmente podemos associar essa mesma ordem, só que de forma inversa como causadora de uma patologia social contemporânea.<br>
+
+Em tempos atuais, diversas pessoas, especialmente quando mais jovens, são seduzidas pelo encanto de uma serpente que é muito atraente, pois sua companhia faz sempre presente, estando a pessoa em qualquer lugar ou situação. De certa forma, o mundo contemporâneo é um mundo vazio. As pessoas, em sua maioria, estão preocupadas com seu interesse particular, tudo voltado ao mesmo, não há tempo para vínculos afetivos e sociais. Diante dessa prática, os seres humanos vivem dentro de um casulo e, quando conseguem sair desse entorno, desabam, pois não conseguem voar.<br>
+
+A importância do toque físico
+Diversos grupos sociais, especialmente os jovens, são seduzidos por aplicativos digitais, e a esfera virtual toma conta da vida do adolescente. Toda e qualquer demanda, seja do afeto, seja do biológico, é resolvida através de um toque, o toque do dedo sobre a tela. O mais assombroso é que se tocam os dedos, mas o principal entre os seres humanos, que é o contato físico, no limite o encontro de almas não acontece, ficando dessa forma o ser humano cego para os laços afetivos reais da vida.<br>
+
+Entendemos todo esse processo social como sendo o autismo digital. Assim como o autista, que se fecha em seu mundo e muitas vezes não permite o contato de outra pessoa, o autista digital também se fecha em seu mundo, não permitindo qualquer outro tipo de contato, apenas o virtual. Sem dúvida alguma, esse fenômeno social é a fábrica de inúmeras complicações afetivas, pois, não sabendo o ser humano lidar com seu semelhante, como poderá viver em sociedade?<br>
+
+É certo que estamos diante de um entrave que pode ser melhor entendido através de debates e reflexões, mas, acima de tudo, o importante é nunca esquecermos que o ser humano só existe em reconhecimento do outro, e toda a prática de socialização acontece pela ordem da cultura.<br>
+
+Viver no entorno de um casulo e não saber voar sozinho é o grande dilema dos jovens no mundo presente. Ainda que o digital nos ofereça sóis grandes. O mundo da fantasia, dos jogos, dos parceiros perfeitos não é o mundo real. O mundo real é um mundo de frustrações, de abraços e sorrisos, de tristezas e alegrias, da convivência com o diferente. Entender tudo isso talvez seja o grande desafio para jovens, pais e educadores do presente.<BR>
+
+Marcelo Cabral<br>
+Professor de Sociologia e psicanalista. Mestrando em Psicologia da Educação</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleContent(element) {
+        const content = element.querySelector(".content");
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+
+    function toggleMusic() {
+        const music = document.getElementById("bg-music");
+        const btn = document.getElementById("music-btn");
+
+        if (music.paused) {
+            music.play();
+            btn.textContent = "🔇 Pausar Música";
+        } else {
+            music.pause();
+            btn.textContent = "🔊 Tocar Música";
+        }
+    }
+</script>
+
+</body>
+</html>

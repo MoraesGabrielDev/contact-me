@@ -1,0 +1,173 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+  background: url('imgs/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project (3).png') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.background-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0A193C;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+ h1 {
+        margin: 0 auto 50px;
+        font-size: 3em;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ffe066;
+        width: max-content;
+        text-align: center;
+        color: #fff;
+    }
+
+
+.grid-livros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 150px;
+  margin-top: 70px;
+}
+
+.livro {
+  background: rgba(0, 0, 0, 0.78);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 210px;
+  margin: 0 auto;
+}
+
+.livro img {
+  width: 155px;
+  height: 210px;
+  border-radius: 6px;
+}
+
+.livro-pequeno {
+  width: 155px;
+  height: 210px;
+  border-radius: 6px;
+}
+
+.livro p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.grid-livros:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-home {
+  position: relative;
+  color: #ffe066;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.link-home::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffe066;
+  transition: width 0.4s ease-in-out;
+}
+
+.link-home:hover {
+  color: #fff4b8;
+  transform: scale(1.08);
+}
+
+.link-home:hover::before {
+  width: 100%;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .grid-livros {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .grid-livros {
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .livro {
+    width: 160px;
+    padding: 10px;
+  }
+  .livro img {
+    width: 120px;
+    height: 160px;
+  }
+  .livro p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h1::after {
+    width: 200px;
+  }
+  .grid-livros {
+    gap: 25px;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .livro {
+    width: 130px;
+    padding: 8px;
+  }
+  .livro img {
+    width: 100px;
+    height: 140px;
+  }
+  .livro p {
+    font-size: 0.75rem;
+  }
+  .link-home {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
