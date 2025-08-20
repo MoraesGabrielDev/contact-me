@@ -360,10 +360,10 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
   }
 
   .swiper{
-  max-width:350px;
+  max-width:400px;
   }
   .slide-rect a {
-    max-width: 240px;
+    max-width: 280px;
   }
 }
 
@@ -379,11 +379,11 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     justify-content: center;
   }
   .swiper{
-    max-width: 350px;
+    max-width: 370px;
   }
 
   .slide-rect a {
-    max-width: 280px;
+    max-width: 260px;
   }
 }
 
@@ -453,6 +453,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
 
 
