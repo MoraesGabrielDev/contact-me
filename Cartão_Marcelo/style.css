@@ -360,10 +360,10 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
   }
 
   .swiper{
-  max-width:400px;
+  max-width:450px;
   }
   .slide-rect a {
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 
@@ -379,11 +379,11 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     justify-content: center;
   }
   .swiper{
-    max-width: 370px;
+    max-width: 400px;
   }
 
   .slide-rect a {
-    max-width: 260px;
+    max-width: 300px;
   }
 }
 
@@ -412,11 +412,11 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     padding: 0.7rem 1rem;
   }
   .swiper{
-    width:350px;
+    width:390px;
   }
 
   .slide-rect a {
-    width: 260px;
+    width: 290px;
     font-size: 0.9rem;
   }
 }
@@ -443,6 +443,10 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     font-size: 0.85rem;
     padding: 0.6rem 0.9rem;
   }
+
+  .swiper{
+    max-width: 300px;
+  }
   
 
   .slide-rect a {
@@ -453,6 +457,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
 
 
