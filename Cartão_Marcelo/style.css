@@ -32,7 +32,7 @@ body {
 }
 
 .swiper {
-  width: 700px;
+  width: 500px;
   height: 300px;
   margin-top: 10px;
   margin-bottom: -20px;
@@ -378,9 +378,12 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     width: 80%;
     justify-content: center;
   }
+  .swiper{
+    max-width: 350px;
+  }
 
   .slide-rect a {
-    max-width: 200px;
+    max-width: 280px;
   }
 }
 
@@ -413,7 +416,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
   }
 
   .slide-rect a {
-    width: 220px;
+    width: 260px;
     font-size: 0.9rem;
   }
 }
@@ -450,6 +453,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
 
 
