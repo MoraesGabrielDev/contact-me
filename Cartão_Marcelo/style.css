@@ -344,12 +344,18 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
   .logo-img {
     max-width: 160px;
   }
+   .apresentation {
+      text-align: center;
+    max-width: 700px;
+    padding: 1rem;
+  }
 
   .apresentation h2 {
     font-size: 1.4rem;
   }
 
-  .text-apresentation p {
+  .text-apresentation  {
+    text-align: center;
     font-size: 0.95rem;
   }
 
@@ -400,7 +406,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
   }
 
   .slide-rect {
-    max-width: 180px;
+    max: 180px;
     font-size: 0.9rem;
   }
 }
@@ -437,3 +443,4 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
