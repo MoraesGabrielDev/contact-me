@@ -384,11 +384,11 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 /* Smartphones padrão (até 576px) */
 @media (max-width: 576px) {
   .profile-img {
-    max-width: 130px;
+    display:none;
   }
 
   .logo-img {
-    max-width: 150px;
+    max-width: 300px;
   }
 
   .apresentation h2 {
@@ -417,9 +417,8 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 /* Celulares muito pequenos (até 360px) */
 @media (max-width: 360px) {
   .profile-img {
-    max-width: 100px;
+    display:none;
   }
-
   .logo-img {
     max-width: 120px;
   }
@@ -447,6 +446,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
 
 
