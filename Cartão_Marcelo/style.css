@@ -32,7 +32,7 @@ body {
 }
 
 .swiper {
-  width: 500px;
+  width: 580px;
   height: 300px;
   margin-top: 10px;
   margin-bottom: -20px;
@@ -453,6 +453,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
 
 
