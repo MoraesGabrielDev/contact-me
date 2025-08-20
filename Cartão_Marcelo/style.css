@@ -404,6 +404,9 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     font-size: 0.9rem;
     padding: 0.7rem 1rem;
   }
+  .swiper{
+    width:200px;
+  }
 
   .slide-rect {
     max: 180px;
@@ -434,6 +437,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
     font-size: 0.85rem;
     padding: 0.6rem 0.9rem;
   }
+  
 
   .slide-rect {
     max-width: 160px;
@@ -443,4 +447,5 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
