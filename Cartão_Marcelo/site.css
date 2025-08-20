@@ -148,6 +148,38 @@ flex-direction: column;
 text-align: center;
 }
 
+.grupo-estudos {
+  padding: 40px 20px;
+  background-color: rgba(16, 24, 107, 0.9);
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.container-grupo {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grupo-estudos h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.text-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.grupo-text strong {
+  color: #ffe066;
+}
+
 .strong-text {
  color: #ffe066;
 }
@@ -606,3 +638,4 @@ font-size: 0.9em;
 }
 
 }
+
