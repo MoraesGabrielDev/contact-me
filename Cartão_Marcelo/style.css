@@ -388,7 +388,8 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
   }
 
   .logo-img {
-    max-width: 300px;
+    max-width: 350px;
+    margin-top: 40px;
   }
 
   .apresentation h2 {
@@ -446,6 +447,7 @@ body.fade-in .buttons-section .btn:nth-child(3) { animation-delay: 1.6s; }
 }
 
 }}
+
 
 
 
