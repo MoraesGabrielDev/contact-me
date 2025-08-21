@@ -15,6 +15,53 @@
         line-height: 1.6;
     }
 
+    .home-button {
+  text-decoration: none;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #ffe066;
+  text-shadow: 1px 1px 2px black;
+  display: inline-block;
+}
+
+/* Link interno */
+.home-button a {
+  position: relative;
+  color: #ffe066;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    transform 0.3s ease;
+ 
+  display: inline-block;
+}
+
+/* Linha dourada animada aparecendo em cima */
+.home-button a::before {
+  content: '';
+  position: absolute;
+
+  width: 0%;
+  height: 2px;
+  background-color: #ffe066;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Hover estilizado */
+.home-button a:hover {
+  color: #fff4b8;
+
+  transform: scale(1.08); /* leve crescimento */
+}
+
+.home-button a:hover::before {
+  width: 100%; /* linha se expande da esquerda para a direita */
+}
+
+
     .background-filter {
         position: fixed;
         top: 0;
@@ -456,6 +503,7 @@ Professor de Sociologia e psicanalista
 
 </body>
 </html>
+
 
 
 
